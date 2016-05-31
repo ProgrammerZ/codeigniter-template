@@ -62,7 +62,8 @@ Documentation
 	</ol>
 
 	<p><b>Usage</b></p>
-	<pre>$this->template->title('Blog', $article->title);</pre>
+	<pre>$this->template->title('Blog', $article->title);
+	// In your view use $template['title']</pre>
 	<br />
 
 	<a name="set"></a>
@@ -73,7 +74,8 @@ Documentation
 	<pre>$this->template->set('foo', $bar);</pre>
 
 	<p><b>Usage</b></p>
-	<pre>$this->template->build('welcome_message', array('message' => 'Hi there!'));</pre>
+	<pre>$this->template->build('welcome_message', array('message' => 'Hi there!')); 
+	// In your view use $message</pre>
 	<br />
 
 	<a name="prepend_metadata"></a>
